@@ -24,7 +24,7 @@ int main() {
     static_assert(ApplyN<1>::apply<IncrUint64>::apply<base>::value == IncrUint64::apply<base>::value);
     static_assert(ApplyN<5>::apply<AddUint64::apply<Uint64<2>>>::apply<base>::value == 10);
 
-    // Go through the first 10 fibonnacci numbers
+    // Go through the first 10 fibonacci numbers
     static_assert(ApplyN<0>::apply<FiboStep>::apply<FiboBase>::current::value == 1);
     static_assert(ApplyN<1>::apply<FiboStep>::apply<FiboBase>::current::value == 1);
     static_assert(ApplyN<2>::apply<FiboStep>::apply<FiboBase>::current::value == 2);
