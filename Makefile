@@ -1,5 +1,11 @@
-funcpp:
-	g++ -std=c++2a funcpp-test.cc -I. -o funcpp-test
+out:
+	mkdir out
+
+funcpp: out
+	g++ -std=c++2a funcpp-test.cc -I. -o out/funcpp-test
+
+fibonnacci: out
+	g++ -std=c++2a fibonnacci.cc -I. -o out/fibonnacci
 
 clean:
-	rm funcpp-test
+	rm -r out

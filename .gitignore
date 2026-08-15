@@ -4,3 +4,6 @@
 # Direnv config
 .envrc
 .direnv/
+
+# Binary dir
+out/
