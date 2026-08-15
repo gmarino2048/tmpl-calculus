@@ -1,1 +1,6 @@
+# VSCode Config
 .vscode/
+
+# Direnv config
+.envrc
+.direnv/
