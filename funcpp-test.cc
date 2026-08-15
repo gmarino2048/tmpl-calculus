@@ -1,4 +1,4 @@
-#include "funcpp.h"
+#include <funcpp.h>
 
 template <int I>
 using Constant = std::integral_constant<int, I>;
@@ -68,4 +68,6 @@ int main()
     static_assert(call<SUCC, SUCC::apply<THREE>, Incr, c5>::value == 10);
     static_assert(call<Bluebird, SUCC, SUCC, THREE, Incr, c5>::value == 10);
     static_assert(Bluebird::apply<SUCC>::apply<SUCC>::apply<THREE>::apply<Incr>::apply<c0>::value == 5);
+
+    return 0;
 }
